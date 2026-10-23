@@ -8,27 +8,44 @@
 
   <!-- Open Graph / Google -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Piano 88 — Academia de Piano">
+  <meta property="og:site_name" content="Piano 88 Academy">
   <meta property="og:title" content="Piano 88 — Academia de Piano">
   <meta property="og:description" content="Piano 88 es una academia de piano nueva, construida desde cero. Clases personalizadas, grupos reducidos y primera clase gratuita.">
-  <meta property="og:url" content="https://piano-88-academy.github.io/piano_88/">
+  <meta property="og:url" content="https://piano-88-academy.github.io/">
   <meta property="og:locale" content="es_ES">
+  <link rel="canonical" href="https://piano-88-academy.github.io/">
 
   <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MusicSchool",
-    "name": "Piano 88 — Academia de Piano",
-    "url": "https://piano-88-academy.github.io/piano_88/",
-    "description": "Academia de piano nueva con clases personalizadas, grupos reducidos y primera clase gratuita.",
-    "email": "corronsaiprojects@gmail.com",
-    "telephone": "+34628179088"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://piano-88-academy.github.io/#website",
+        "name": "Piano 88 Academy",
+        "alternateName": ["Piano 88", "Piano 88 Academia de Piano"],
+        "url": "https://piano-88-academy.github.io/",
+        "inLanguage": "es"
+      },
+      {
+        "@type": "MusicSchool",
+        "@id": "https://piano-88-academy.github.io/#organization",
+        "name": "Piano 88 Academy",
+        "url": "https://piano-88-academy.github.io/",
+        "description": "Academia de piano nueva con clases personalizadas, grupos reducidos y primera clase gratuita.",
+        "email": "piano88academy@gmail.com",
+        "telephone": "+34628179088",
+        "logo": "https://piano-88-academy.github.io/favicon-192.png"
+      }
+    ]
   }
   </script>
 
-  <!-- Favicon SVG inline (no depende de archivo externo) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%2315120e'/><text x='32' y='44' font-family='serif' font-size='28' font-weight='bold' fill='%23c5a463' text-anchor='middle'>88</text></svg>">
+  <!-- Favicon (archivos reales en la raíz del repositorio) -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -186,11 +203,6 @@
         </div>
       </div>
     </div>
-    <div class="mt-10 text-center">
-      <a href="metodo.html" class="text-sm text-mute hover:text-goldlight transition-colors tracking-wide">
-        Conocer el método en detalle →
-      </a>
-    </div>
   </div>
 </section>
 
@@ -236,47 +248,6 @@
             Ver más
           </a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ LA ACADEMIA / PROPUESTA ============ -->
-<section id="academia" class="relative py-24 md:py-32 bg-panel border-t border-line2">
-  <div class="max-w-7xl mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-xs tracking-[0.3em] uppercase gold-text mb-4">Por qué Piano 88</p>
-      <h2 class="font-serif font-light text-4xl sm:text-5xl leading-tight text-ivory mb-6">
-        Una academia nueva,<br><span class="italic gold-text">pensada al detalle.</span>
-      </h2>
-      <p class="text-mute text-base sm:text-lg leading-relaxed mb-8">
-        Piano 88 abre sus puertas con una idea clara: empezar pequeño para hacerlo bien.
-        Sin masificación, sin clases genéricas. Cada grupo se diseña desde el primer alumno,
-        no se ajusta después para encajar a cientos.
-      </p>
-      <div class="space-y-5">
-        <div class="flex gap-4">
-          <span class="num text-2xl shrink-0">—</span>
-          <p class="text-sm text-mute leading-relaxed"><span class="text-ivory">Grupos reducidos desde el primer día</span>, no como promesa de crecimiento futuro.</p>
-        </div>
-        <div class="flex gap-4">
-          <span class="num text-2xl shrink-0">—</span>
-          <p class="text-sm text-mute leading-relaxed"><span class="text-ivory">Pianos acústicos</span> en cada aula, no teclados digitales de sustitución.</p>
-        </div>
-        <div class="flex gap-4">
-          <span class="num text-2xl shrink-0">—</span>
-          <p class="text-sm text-mute leading-relaxed"><span class="text-ivory">Clase de prueba gratuita</span> para que decidas con información real, no con promesas.</p>
-        </div>
-      </div>
-    </div>
-    <div class="fade-up relative">
-      <div class="aspect-[4/5] rounded-2xl overflow-hidden border border-line2">
-        <img src="https://images.unsplash.com/photo-1571974599782-87624638275e?q=80&w=1200&auto=format&fit=crop"
-             alt="Sala de piano de la academia" class="w-full h-full object-cover" loading="lazy">
-      </div>
-      <div class="absolute -bottom-6 -left-6 bg-ink border border-line2 rounded-xl p-5 max-w-[240px] hidden sm:block">
-        <p class="font-display italic text-lg text-ivory leading-snug">"Preferimos diez alumnos bien atendidos a cien anónimos."</p>
-        <p class="mt-2 text-xs text-muted2 tracking-wide">— Filosofía de Piano 88</p>
       </div>
     </div>
   </div>
@@ -330,9 +301,8 @@
       <div>
         <p class="text-xs tracking-widest uppercase text-ivory mb-4">Academia</p>
         <ul class="space-y-2 text-sm text-mute">
-          <li><a href="metodo.html" class="hover:text-goldlight transition-colors">Método</a></li>
+          <li><a href="#metodologia" class="hover:text-goldlight transition-colors">Método</a></li>
           <li><a href="programas.html" class="hover:text-goldlight transition-colors">Programas</a></li>
-          <li><a href="#academia" class="hover:text-goldlight transition-colors">La academia</a></li>
           <li><a href="contacto.html" target="_blank" rel="noopener" class="hover:text-goldlight transition-colors">Contacto</a></li>
         </ul>
       </div>
